@@ -1,0 +1,8 @@
+# Raw, un-redacted messages NEVER go in git. Keep them only on your own machine.
+data/raw/*
+!data/raw/.gitkeep
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+.env
