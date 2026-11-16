@@ -50,7 +50,6 @@ KNOWN_COMPANIES: dict[str, set[str]] = {
     "tesla": {"tesla.com"},
     "jpmorgan": {"jpmorgan.com", "jpmchase.com", "chase.com"},
     "goldman sachs": {"gs.com", "goldmansachs.com"},
-    "linkedin": {"linkedin.com"},
     "adp": {"adp.com"},
 }
 
