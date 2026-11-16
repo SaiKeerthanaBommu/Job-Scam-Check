@@ -112,3 +112,9 @@ def test_web_roundtrip():
         assert d["result"]["level"] == "high"
     finally:
         srv.shutdown()
+
+
+def test_linkedin_label_in_signature_is_not_impersonation():
+    msg = "Hi,\nI am a recruiter for a client role.\nmmaggoo@agwtalent.com\nLinkedIn\nPhone: (612) 614-3147\nwww.agwtalent.com"
+    r = analyze(msg)
+    assert not any(f.rule_id == "domain_mismatch" for f in r.findings)
